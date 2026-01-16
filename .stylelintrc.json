@@ -1,0 +1,39 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-html",
+        "stylelint-config-tailwindcss"
+    ],
+    "plugins": [
+        "stylelint-order"
+    ],
+    "rules": {
+        "order/properties-order": [],
+        "order/properties-alphabetical-order": true,
+        "no-descending-specificity": true,
+        "color-function-notation": "legacy",
+        "color-function-alias-notation": null,
+        "hue-degree-notation": null,
+        "alpha-value-notation": null,
+        "number-max-precision": 6
+    },
+    "ignoreFiles": [
+        "**/eslint.config.*",
+        "**/vite.config.*",
+        "**/config.js",
+        "**/config.ts",
+        "**/node_modules/**",
+        "**/dist/**",
+        "**/build/**"
+    ],
+    "overrides": [
+        {
+            "files": ["**/*.html"],
+            "customSyntax": "postcss-html"
+        },
+        {
+            "files": ["**/*.{js,jsx,ts,tsx}"],
+            "customSyntax": "postcss-lit"
+        }
+    ]
+}

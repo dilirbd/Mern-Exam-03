@@ -1,0 +1,25 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.stylelint": "always"
+    },
+    "editor.tabCompletion": "onlySnippets",
+    "stylelint.enable": true,
+    "stylelint.validate": [
+        "css",
+        "postcss",
+        "scss",
+        "html",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "stylelint.config": null,
+    "stylelint.configBasedir": "./",
+    "css.customData": [
+        ".vscode/css_custom_data.json"
+    ],
+    "editor.tabSize": 4,
+    "editor.indentSize": "tabSize",
+    "editor.detectIndentation": true
+}
